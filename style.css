@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px; /* Increase the width */
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 90%; /* Adjust the width of the input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make the button full width */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#age-result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
