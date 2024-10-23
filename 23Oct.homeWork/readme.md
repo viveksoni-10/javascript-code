@@ -20,5 +20,5 @@ JavaScript: For dynamically manipulating the CSS styles through the DOM.
 
                 Project Links
     ____________-------------____________
-
-    
+    Hosted Version: [Live Demo](https://viveksoni-10.github.io/javascript-code/23Oct.homeWork/)
+    GitHub Repository: [Repository Link](https://github.com/viveksoni-10/javascript-code)
