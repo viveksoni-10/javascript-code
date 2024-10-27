@@ -20,6 +20,10 @@ This project is a simple shopping cart application The interface consists of a t
 - **App.js**: Main component that handles state management and passes props to `ProductList` and `Cart`.
 - **ProductList.js**: Contains the list of products with quantity control buttons.
 - **Cart.js**: Displays the cart with items added, total price, and cart status.
+- ## Try it out
+[Live Demo:](https://viveksoni-10.github.io/javascript-code/weejky-test3/)
+
+[GitHub Repository:](https://github.com/viveksoni-10/javascript-code/tree/main/weejky-test3)
 
 
 
