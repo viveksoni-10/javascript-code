@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Test 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container-left">
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><sup id="editing" style="display: none;">0</sup></div>
+
+            <div class="product-cart-heading">
+                <p>Product</p>
+                <p>Description</p>
+                <p>Price</p>
+                <p>Quantity</p>
+
+            </div>
+            <div class="product-1 product">
+                <img src="https://m.media-amazon.com/images/I/7181NjMrq-L._UX385_.jpg" alt="">
+                <div class="product-description">Casual Shirt</div>
+                <div class="product-value">650</div>
+                <div class="product_id">1</div>
+                <button class="buttons">
+                    <span class="minus">-</span>
+                    <span id="items">0</span>
+                    <span class="plus">+</span>
+                </button>
+            </div>
+
+            <div class="product-2 product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR8kZdx-6B7OEgd1onXUpf3inFEexiIBUZlg&usqp=CAU" alt="">
+                <div class="product-description 2">Formal Shirt</div>
+                <div class="product-value">1200</div>
+                <div class="product_id">2</div>
+                <button class="buttons">
+                    <span class="minus">-</span>
+                    <span id="items">0</span>
+                    <span class="plus">+</span>
+
+                </button>
+            </div>
+
+            <div class="product-3 product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEs_IsixJI4bTnhCwlcWV_K_3eT-pMGg6KWA&usqp=CAU" alt="">
+                <div class="product-description 3">Denim Shirt <br></div>
+                <div class="product-value">1500</div>
+                <div class="product_id">3</div>
+                <button class="buttons">
+                    <span class="minus">-</span>
+                    <span id="items">0</span>
+                    <span class="plus">+</span>
+                </button>
+            </div>
+
+        </div>
+        <div class="container_right right-container" id="cartItem">
+            <h2>Cart</h2>
+
+            <div class="table-container">
+                <p>Cart is empty</p>
+                <table id="table">
+                    <tbody id="table_body"></tbody>
+                </table>
+
+            </div>
+
+            <div class="total">
+                <p>Total Amount:</p><span>Rs. <span id="totalPrice">0</span></span>
+            </div>
+            <div class="Checkout">
+                <p>Buy</p>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
