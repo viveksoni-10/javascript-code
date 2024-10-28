@@ -43,5 +43,5 @@ A simple and stylish dark mode toggle button that lets users switch between ligh
 
 ## 📁 Repository
 
-[View the full source code on GitHub here]([Dark-Mode-Button-main](https://github.com/viveksoni-10/javascript-code/tree/main/Dark-Mode-Button-main)).
+[View the full source code on GitHub here](https://github.com/viveksoni-10/javascript-code/tree/main/Dark-Mode-Button-main).
 
