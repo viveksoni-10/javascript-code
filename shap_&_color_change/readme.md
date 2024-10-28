@@ -51,9 +51,9 @@ This project was built with the following goals in mind:
 
 ## 🔗 Live Demo
 
-Check out the live demo [here](https://viveksoni-10.github.io/javascript-code/shap_&_color_change/).
+[Check out the live demo](https://viveksoni-10.github.io/javascript-code/shap_&_color_change/).
 
 ## 📁 Repository
 
-View the full source code on GitHub [here](https://github.com/viveksoni-10/javascript-code/tree/main/shap_%26_color_change).
+[View the full source code on GitHub](https://github.com/viveksoni-10/javascript-code/tree/main/shap_%26_color_change).
 
