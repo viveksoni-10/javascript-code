@@ -37,3 +37,11 @@ A simple and stylish dark mode toggle button that lets users switch between ligh
 - Add more theme options.
 - Implement user preference storage using local storage.
 
+## 🔗 Live Demo
+
+[Check out the live demo here](https://viveksoni-10.github.io/javascript-code/Dark-Mode-Button-main/).
+
+## 📁 Repository
+
+[View the full source code on GitHub here](Dark-Mode-Button-main).
+
