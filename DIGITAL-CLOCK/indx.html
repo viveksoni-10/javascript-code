@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+   <div id="time">
+      <!-- Hours circle -->
+      <div class="circle" style="--clr:#ff2972;">
+        <div class="dots hr_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70" />
+          <circle cx="70" cy="70" r="70" id="hh" />
+        </svg>
+        <div id="hours">00</div>
+      </div>
+
+      <!-- Minutes circle -->
+      <div class="circle" style="--clr:#fee800;">
+        <div class="dots min_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70" />
+          <circle cx="70" cy="70" r="70" id="mm" />
+        </svg>
+        <div id="minutes">00</div>
+      </div>
+
+      <!-- Seconds circle -->
+      <div class="circle" style="--clr:#04fc43;">
+        <div class="dots sec_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70" />
+          <circle cx="70" cy="70" r="70" id="ss" />
+        </svg>
+        <div id="seconds">00</div>
+      </div>
+
+      <!-- AM/PM display -->
+      <div class="ap">
+        <div id="ap-pm">pm</div>
+      </div>
+    </div>
+
+    <!-- Audio element for ticking sound -->
+    <audio id="tick-sound" src="./clock-tick-76039.mp3"></audio>
+    <script src="./script.js"></script>
+  </body>
+</html>
