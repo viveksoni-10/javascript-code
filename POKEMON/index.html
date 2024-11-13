@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Geekster</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container-box">
+    <h1>GeeksterMon</h1>
+      <!-- <img src="./pngaaa.com-5741690.png" alt=""> -->
+      <select name="type" id="type">
+        <option value="grass">grass</option>
+        <option value="bug">bug</option>
+        <option value="water">water</option>
+        <option value="fire">fire</option>
+        <option value="normal">normal</option>
+        <option value="poison">poison</option>
+        <option value="electric">electric</option>
+        <option value="ground">ground</option>
+        <option value="fighting">fighting</option>
+        <option value="pyschin">pyschin</option>
+        <option value="rock">rock</option>
+        <option value="ghost">ghost</option>
+        
+      </select>
+      <button id="filter">Filter By Type</button>
+      <button id="reset"><a href="index.html">Refresh The Page</a></button>
+      <br />
+      <input
+        type="text"
+        name=""
+        id="search"
+        placeholder="Enter Pokemon Name here..."
+      />
+    </div>
+    <div id="pokemon_card_container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Permanent Marker", cursive;
+}
+.container-box {
+  text-align: center;
+  /* margin: 11px; */
+  /* background-color: darkolivegreen; */
+
+  /* img {
+    width: 100%;
+    height: 22rem;
+    position: relative;
+  } */
+}
+#type,
+#filter,
+#search,
+#reset {
+  font-size: 1.5rem;
+  margin: 6px;
+  border-radius: 5px;
+  border: none;
+
+}
+
+#search:last-child{
+  width: 30%;
+}
+
+#pokemon_card_container {
+  max-width: 100vw;
+  /* border: 1px solid red; */
+  /* margin: auto; */
+}
+.card {
+  width: 11.8rem;
+  cursor: pointer;
+  height: 13rem;
+  perspective: 1000px;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  box-shadow: 0 20px 50px rgba(240, 46, 170, 0.7);
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+/* Rotate the card on hover */
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.back-card {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0 20px 50px rgba(240, 46, 170, 0.7);
+
+  img {
+    width: 100%;
+    height: 62%;
+  }
+  & > .id,
+  .name,
+  .type {
+    text-align: center;
+    color: rgb(243, 76, 109);
+  }
+}
+
+/* Front of card */
+.card-front {
+  background-color: #fff;
+  color: #333;
+  /* border: 1px solid red; */
+}
+
+/* Back of card (rotated) */
+.back-card {
+  background-color: #f0f0f0;
+  color: #333;
+  transform: rotateY(180deg);
+}
