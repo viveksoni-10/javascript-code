@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">infinite scrolling page😒</h1>
+    <div class="box"></div>
+    <script>
+      let box = document.querySelector(".box");
+      let apiKey = "4FbPl-TBx1S5V9wVvN1b_aVxAZJVg87AqfoSyK_bcHc";
+      let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=10`;
+
+      async function getphoto() {
+        try {
+          let response = await fetch(apiUrl);
+          let data = await response.json();
+          data.forEach((element) => {
+            let img = document.createElement("img");
+            img.src = element.urls.regular;
+            img.style.height = "500px";
+            img.style.width = "400px";
+            img.style.display = "block";
+            img.style.margin = "20px auto";
+            box.appendChild(img);
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      }
+      getphoto();
+
+      // Scroll event for infinite scrolling
+      window.addEventListener("scroll", function () {
+        if (
+          window.scrollY + window.innerHeight >=
+          document.documentElement.scrollHeight - 50
+        ) {
+          getphoto();
+        }
+      });
+
+      //   window.addEventListener("scroll", function () {
+      //   console.log(
+      //     window.scrollY,
+      //     window.innerHeight + 50,
+      //     document.box.offsetHeight
+      //   );
+
+      //   if (
+      //     Math.ceil(window.scrollY + window.innerHeight) >=
+      //     document.box.offsetHeight
+      //   ) {
+      //     getPhots();
+      //   }
+      // });
+    </script>
+  </body>
+</html>
