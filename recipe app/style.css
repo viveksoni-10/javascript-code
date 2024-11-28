@@ -1,0 +1,124 @@
+/* General reset for consistent margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+header div {
+  background-color: #333;
+  margin-top: -6px;
+}
+
+
+/* Styling for search results grid */
+.search-result {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  text-align: center;
+  grid-gap: 40px;
+  width: 80%;
+  margin: 10px auto;
+  
+}
+
+/* Button styling for recipe view */
+.recipeBtn {
+  background-color: #4caf50;
+  color: white;
+  width: 50%;
+  margin: auto;
+  border-radius: 6px;
+  font-weight: 600;
+  margin: 10px auto;
+}
+
+/* Card styling for individual recipe */
+.card {
+  width: 360px;
+  margin: auto;
+  animation: transform 0.3s ease-in-out;
+}
+.card:hover{
+  transform: scale(1.02);
+}
+.card img {
+  cursor: pointer;
+  border-radius: 2%;
+  width: 100%;
+}
+.card p {
+  margin: 2px;
+}
+.card h2 {
+  font-size: 30px;
+}
+.card span {
+  color: grey;
+  font-weight: 600;
+}
+
+/* Recipe details modal styling */
+.recipe-details {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #694c2f;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 70%;
+  width: 40%;
+  transition: all 0.5s ease-in-out;
+  overflow-y: scroll; /* Scrollable content for large data */
+}
+
+.recipe-details::-webkit-scrollbar {
+  width: 10px;
+}
+.recipe-details::-webkit-scrollbar-thumb {
+  background-color: gold;
+  border-radius: 16px;
+}
+
+/* Close button styling */
+.recipe-close-btn {
+  margin-left: 93%;
+  margin-top: -4px;
+  height: 40px;
+  background-color: red;
+  width: 40px;
+  border: none;
+  border-radius: 3px;
+}
+
+.recipe-close-btn{
+  margin-left: 93%;
+  margin-top: -4px;
+  height: 40px;
+  background-color: red;
+  width: 40px;
+  border: none;
+  border-radius: 3px;
+}
+
+.recipeName{
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.recipeIngredents{
+  margin-left: 20px;
+}
+
+.recipeIntructions p{
+  line-height: 30px;
+  white-space: pre-line;
+}
